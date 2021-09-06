@@ -1,7 +1,8 @@
 const fs = require('fs/promises');
 
-const writeToFile = (pathToFile, content) => {
-	fs.writeFile(pathToFile, content)
+const writeToFile = async (pathToFile, content) => {
+	await fs
+		.writeFile(pathToFile, content)
 		.then(() => {
 			console.log('File written.');
 		})
