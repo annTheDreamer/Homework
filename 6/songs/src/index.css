@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montez&family=Rock+Salt&display=swap');
+
+:root {
+	--app-primary: #fc5c9c;
+	--app-secondary: #fccde2;
+	--app-ternary: #fcefee;
+	--app-text: #232931;
+	--app-shadows: 2px 0px 5px 0 rgba(0, 0, 0, 0.3);
+	--photo-shadows: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+html,
+body,
+#root,
+.main-grid-container {
+	height: 100%;
+}
+
+.main-grid-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.app-header,
+.app-footer {
+	position: relative;
+	text-align: center;
+}
+
+.app-footer {
+	padding: 1rem;
+	background-color: var(--app-secondary);
+}
+
+.app-footer p {
+	margin: 0;
+	color: var(--app-text);
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.app-header {
+	background-color: var(--app-primary);
+	color: white;
+	font-family: 'Fleur De Leah', cursive;
+	font-size: 30px;
+}
+
+.app-header h1 {
+	margin: 1rem;
+}
+
+.song-item {
+	height: 300px;
+	width: 300px;
+	border: 2px solid var(--app-secondary);
+	border-radius: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(250, 242, 242);
+	transition: ease-out 0.3s;
+	box-shadow: var(--app-shadows);
+	justify-self: center;
+}
+
+.song-item:hover {
+	transform: scale(1.1);
+}
+
+.song-container {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	place-content: center;
+	row-gap: 50px;
+	padding: 2rem;
+}
+
+h2 {
+	color: var(--app-text);
+	text-align: center;
+	font-family: 'Montez', cursive;
+	font-size: xx-large;
+}
+
+.photo {
+	height: 180px;
+	width: 180px;
+	box-shadow: var(--photo-shadows);
+}
+
+.title {
+	font-style: italic;
+}
+
+.artist {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
