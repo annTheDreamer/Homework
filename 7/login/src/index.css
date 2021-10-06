@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+	--app-primary: #26f7fd;
+	--app-secondary: #3d7afd;
+	--app-ternary: #1f0954;
+	--app-light: #ffffe4;
+	--app-dark: #070d0d;
+	--app-shadow: 1px 1px 3px 0 rgb(0, 0, 0, 0.3);
+}
+
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body,
+#root,
+.main-grid-container {
+	height: 100%;
+}
+
+.main-grid-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+	font-family: 'Bubbler One', sans-serif;
+	text-indent: 5%;
+}
+
+p {
+	margin: 0;
+	text-indent: 5%;
+}
+
+.white-text {
+	color: var(--app-light);
+}
+
+.app-header,
+.app-footer {
+	position: relative;
+	padding: 1rem;
+	box-shadow: var(--app-shadow);
+}
+
+.app-header {
+	background-color: var(--app-primary);
+}
+
+h2 {
+	text-indent: 10%;
+}
+
+.app-footer {
+	background-color: var(--app-ternary);
+	text-align: center;
+}
+
+.main-section {
+	background-color: var(--app-secondary);
+	height: 100%;
+	box-shadow: var(--app-shadow);
+}
+
+.main-section p {
+	padding: 2rem;
+	font-size: larger;
+	text-indent: 10rem;
+	font-style: italic;
+}
+
+.main-section h2 {
+	margin: 0;
+	padding-top: 3rem;
+	color: var(--app-light);
+}
+
+.btn {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	font-family: 'Bubbler One', sans-serif;
+	font-size: large;
+	font-weight: 600;
+	background-color: var(--app-primary);
+	border-color: var(--app-ternary);
+	border-radius: 10px;
+	color: var(--app-light);
+	box-shadow: var(--app-shadow);
+	cursor: pointer;
+	margin: 0.5rem;
+}
+
+.btn:hover {
+	background-color: var(--app-ternary);
+	border-color: var(--app-primary);
+}
+
+.btns {
+	margin-left: 10%;
+}
+
+.input-field {
+	border-radius: 5px;
+	border-color: var(--app-light);
+	background-color: var(--app-secondary);
+	display: flex;
+	width: 220px;
+}
+
+.login-details {
+	padding: 0 0 1% 10%;
+	color: var(--app-light);
+}
