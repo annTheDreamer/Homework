@@ -5,7 +5,7 @@ import PostList from '../layout/PostList';
 const Posts = () => {
 	const [posts, setPosts] = useState([]);
 	useEffect(() => {
-		fetch('https://localhost:8000/navigation/v1/posts')
+		fetch('http://localhost:8000/navigation/v1/posts')
 			.then((response) => response.json())
 			.then((info) => setPosts(info.allQuotes))
 			.catch((err) => console.log(err));
